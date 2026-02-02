@@ -1,6 +1,6 @@
-def main():
-    print("Hello from tg-bot!")
+from src.presentation.api_bot.bot import bot_main
+import asyncio
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(bot_main())

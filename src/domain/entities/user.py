@@ -3,10 +3,8 @@ from datetime import datetime
 from typing import Optional
 
 @dataclass
-class Meal:
+class User:
     id: Optional[int]
-    user_id: Optional[int]
-    food_name: str
+    tg_id: Optional[int]
+    name: str
     created_at: Optional[datetime] = None
-
-    

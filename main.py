@@ -5,8 +5,7 @@ import logging
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    try:
-        asyncio.run(bot_main())
-        print('Бот стартанул')
+    try:        
+        asyncio.run(bot_main())        
     except KeyboardInterrupt:
         print('Exit')

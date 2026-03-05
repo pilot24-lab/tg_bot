@@ -13,9 +13,9 @@ class MealRepository(ABC):
         pass
 
     @abstractmethod
-    async def get_by_user_id(self, user_id: int, limit: int = 10, offset: int = 0) -> List[Meal]:
+    async def get_all_by_user_id(self, user_id: int, limit: int = 10, offset: int = 0) -> List[Meal]:
         pass
-
+    
     @abstractmethod
     async def update(self, meal: Meal) -> Optional[Meal]:
         pass

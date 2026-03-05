@@ -17,6 +17,10 @@ class UserRepository(ABC):
         pass
     
     @abstractmethod
+    async def get_all(self, limit: int = 100, offset: int = 0) -> List[User]:
+        pass
+        
+    @abstractmethod
     async def update(self, user: User) -> User:
         pass
     

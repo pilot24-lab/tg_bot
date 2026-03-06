@@ -8,5 +8,6 @@ class Meal:
     user_id: Optional[int]
     food_name: str
     created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
 
     

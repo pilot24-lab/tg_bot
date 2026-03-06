@@ -41,7 +41,7 @@ class UpdateUserUseCase:
       self.user_repository = user_repository
 
    async def execute(self, user_id: int, name: Optional[str] = None) -> User:
-      existing_user = await self.user_repository.get_by_id(tg_id)
+      existing_user = await self.user_repository.get_by_id(user_id)
       if not existing_user:
          raise EntityNotFound(f"User with id {user_id} not found")
       

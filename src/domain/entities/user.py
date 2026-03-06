@@ -8,3 +8,4 @@ class User:
     tg_id: Optional[int]
     name: str
     created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None

@@ -54,7 +54,7 @@ class UpdateUserUseCase:
       return updated_user
 
 
-class DaleteUserUseCase:
+class DeleteUserUseCase:
    def __init__(self, user_repository: UserRepository):
      self.user_repository = user_repository
 

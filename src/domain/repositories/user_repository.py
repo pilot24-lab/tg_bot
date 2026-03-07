@@ -9,7 +9,7 @@ class UserRepository(ABC):
         pass
 
     @abstractmethod
-    async def get_by_tg_id(self, tf_id: int) -> User:
+    async def get_by_tg_id(self, tg_id: int) -> User:
         pass
 
     @abstractmethod

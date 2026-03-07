@@ -1,13 +1,13 @@
 import asyncio
 from pathlib import Path
 
-from infrastructure.database.connection import Database
+from infrastructure.database.connection import DatabaseConnection
 
 
 MIGRATIONS_DIR = Path(__file__).parent / "migrations"
 
 
-async def migrate(db: Database):
+async def migrate(db: DatabaseConnection):
 
     conn = await db.connect()
 

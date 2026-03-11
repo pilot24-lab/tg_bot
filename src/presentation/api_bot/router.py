@@ -1,5 +1,5 @@
 from aiogram import Router
-from src.presentation.api_bot.handlers.hanlers import router as bot_router 
+from presentation.api_bot.handlers.user_hanlers import router as bot_router 
 
 router = Router()
 

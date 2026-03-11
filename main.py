@@ -4,7 +4,7 @@ import logging
 
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.INFO, filename='tg_logs.log', filemode='w', format="%(asctime)s %(levelname)s %(message)s")
     try:        
         asyncio.run(bot_main())        
     except KeyboardInterrupt:

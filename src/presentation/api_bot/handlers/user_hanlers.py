@@ -13,7 +13,7 @@ from src.presentation.api_bot.dependencies import (
 
 user_router = Router()
 
-@user_router.message(CommandStart)
+@user_router.message(CommandStart())
 async def cmd_start(message: Message, use_case: CreateUserUseCase):
     await message.reply(f"Hi user {message.from_user.full_name}")
     try:

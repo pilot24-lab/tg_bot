@@ -42,16 +42,16 @@ def get_meal_repository():
     return SQLiteMealRepository(db_connection)
 
 def get_create_meal_use_case():
-    return CreateMealUseCase(get_meal_repository)
+    return CreateMealUseCase(get_meal_repository())
 
 def get_get_meal_use_case():
-    return GetMealUseCase(get_meal_repository)
+    return GetMealUseCase(get_meal_repository())
 
 def get_get_all_meals_by_id_use_case():
-    return GetAllMealsByUserIdUseCase(get_meal_repository)
+    return GetAllMealsByUserIdUseCase(get_meal_repository())
 
 def get_update_meal_use_case():
-    return UpdateMealUseCase(get_meal_repository)
+    return UpdateMealUseCase(get_meal_repository())
 
 def get_delete_meal_use_case():
-    return DeleteMealUseCase(get_meal_repository)
+    return DeleteMealUseCase(get_meal_repository())

@@ -43,3 +43,4 @@ async def migrate(db: DatabaseConnection):
         await conn.commit()
 
     print("Migrations applied")
+    await conn.close()

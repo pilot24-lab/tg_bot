@@ -36,5 +36,5 @@ class DatabaseConnection:
         cursor = await conn.execute(query, *args)
         return await cursor.fetchall()
 
-
-db_connection = DatabaseConnection()
+db_path = Path(__file__).parent / 'db.sqlite3'
+db_connection = DatabaseConnection(str(db_path))

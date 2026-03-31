@@ -6,7 +6,7 @@ create table if not exists users(
     updated_at timestamp default current_timestamp
 );
 
-create table if not exists meals(
+/* create table if not exists meals(
     id serial primary key,
     user_id: integer not null,
     food_name text not null,
@@ -14,4 +14,4 @@ create table if not exists meals(
     updated_at timestamp default current_timestamp,
 
     FOREIGN KEY (user_id) REFERENCES users(id)
-);
+); */
